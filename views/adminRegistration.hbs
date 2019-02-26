@@ -1,0 +1,17 @@
+<div>
+        {{#if errors}}
+                {{#each errors}}
+                        <div>{{msg}}</div>
+                {{/each}}
+        {{/if}}
+        <form action="/admin/registration" method="POST" encType="multipart/form-data">
+           Enter name :      <input type="text" name="name" placeholder="Enter name" id=""><br>
+                <input type="text" name="email" placeholder="Email" id=""><br>
+                <input type="password" placeholder="Password" name="pass1" id=""><br>
+                <input type="password" placeholder="Re-enter Password" name="pass2" id=""><br>
+                <input type="text" name="dept" placeholder="Department" id=""><br>
+                <h5>Upload your cv(.pdf)</h5>
+                <input type="file" name="cv" id="">
+                <input type="submit" value="Submit">
+        </form>
+</div>
