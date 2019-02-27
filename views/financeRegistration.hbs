@@ -1,0 +1,87 @@
+<div>
+        {{#if errors}}
+                {{#each errors}}
+                        <div>{{msg}}</div>
+                {{/each}}
+        {{/if}}
+<style>
+     .col-md-4 {margin-top:80px;
+        box-shadow: 10px 10px 60px 25px black;
+        background: rgba(0, 0, 0, 0.4);
+	margin-left:150px;
+        margin-bottom:50px;
+        margin-top:10px;
+        margin-left:350px;
+     }
+        .col-md-4 col-sm-4 col-xs-12 input{
+	width:100%;
+	margin-bottom:20px;
+}
+
+     .form-control{
+	background:white;
+	border-radius: 0px;
+	border:0px;
+	border-bottom:1px;
+} 
+ .form-group{
+         text-align: center;
+ }
+ .label{
+	font-weight:normal;
+	margin-top:15px;
+	color:white;
+	font-size:21px;
+}
+.panel{
+        border:0px;
+        background:rgba(0,0,0,0.5);
+        color:#ffff;
+        text-align:center;
+        padding-top:50px;
+}
+h2{
+        text-align: center;
+        margin-top: 5px;
+        color: black;
+        background: #ffff;
+}
+
+        </style>
+        <h2 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif "><b>finance Registration</b></h2>
+         <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="panel panel-default">
+                
+            <div class="panel-body">
+            <form action="/finance/registration" method="POST" encType="multipart/form-data" class="form-horizontal">
+            <div class="form-group">
+                <label for="name"><span style="color:rgb(255, 255, 255)"><span class="glyphicon">&#xe008;</span>  Name:</span></label>
+                <input type="name" class="form-control" name="Name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="email"><span style="color:white"><span class="glyphicon">&#x2709;</span>  Email:</span></label>
+                <input type="email" class="form-control" name="Email" placeholder="Something@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="password"><span style="color:white"> <span class="glyphicon">&#xe033;</span>  Password:</span></label>
+                <input type="password" class="form-control" name="Password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="password"><span style="color:white"> <span class="glyphicon">&#xe033;</span>  Re-type Password:</span></label>
+                <input type="password" class="form-control" name="Password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label><span class="glyphicon">&#xe203;</span>  Upload your CV(.pdf):</label>
+                <input type="file" name="cv" id="">
+            </div>
+            <div class="form-group">        
+            <div class="col-md-offset-0 col-md-15">
+                <button type="button" class="btn btn-info">Submit</button>
+
+      </div>
+    </div>
+        </form>
+        </div>
+        </div>
+       </div>
+</div>

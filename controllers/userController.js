@@ -29,4 +29,10 @@ router.get('/knowledgeList-applied',function(req,res){
  router.get('/Admin-viewstatement',function(req,res){
        res.render('AdminviewStatement');
 });
+router.get('/finance-registration',function(req,res){
+        res.render('financeRegistration');
+});
+router.get('/developer-registration',function(req,res){
+        res.render('developerRegistration');
+});
 module.exports = router;
