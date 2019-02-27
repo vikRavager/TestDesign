@@ -14,19 +14,27 @@ router.get('/admin-registration',function(req,res){
         res.render('adminRegistration');
 });
 
-router.get('/createOrEdit',function(req,res){
-        res.render('createOrEdit');
+router.get('/AdmincreateOrEdit',function(req,res){
+        res.render('AdmincreateOrEdit');
 });
 router.get('/knowledge-registration',function(req,res){
         res.render('knowledgeRegistration');
 });
-router.get('/apply',function(req,res){
-        res.render('apply');
+router.get('/knowledge-apply',function(req,res){
+        res.render('knowledgeContributerListApplied');
 });      
-router.get('/list-applied',function(req,res){
-        res.render('listApplied');
+router.get('/knowledgeList-applied',function(req,res){
+        res.render('knowledgeContributerListOfProblemApplied');
 }); 
-router.get('/viewProblemKnowledgeContributor',(req,res)=>{
-        res.render('viewProblemKnowledgeContributor');
+``
+router.get('/Admin-viewstatement',function(req,res){
+        res.render('AdminviewStatement');
 });
+
+router.get('/view-Each-Applied',(req,res)=>{
+
+        res.render('viewProblemKnowledgeContributor');
+
+});
+
 module.exports = router;
