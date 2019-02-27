@@ -1,0 +1,79 @@
+<div>
+        <style>
+     .col-md-4 {margin-top:80px;
+        box-shadow: 10px 10px 60px 25px black;
+        background: rgba(0, 0, 0, 0.4);
+	margin-left:150px;
+        margin-bottom:50px;
+        margin-top:10px;
+        margin-left:350px;
+     }
+        .col-md-4 col-sm-4 col-xs-12 input{
+	width:100%;
+	margin-bottom:20px;
+}
+
+     .form-control{
+	background:white;
+	border-radius: 0px;
+	border:0px;
+	border-bottom:1px;
+} 
+ .form-group{
+         text-align: center;
+ }
+ .label{
+	font-weight:normal;
+	margin-top:15px;
+	color:white;
+	font-size:21px;
+}
+.panel{
+        border:0px;
+        background:rgba(0,0,0,0.5);
+        color:#ffff;
+        text-align:center;
+        padding-top:50px;
+}
+h3{
+        text-align: center;
+        margin-top: 5px;
+        color: black;
+        background: #ffff;
+}
+
+
+
+        </style>
+        
+    <h3 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif "><b>TITLE : </b>{{list.title}}</h3><br>
+
+        
+        <div class="container">
+                <div class="row">
+                        
+<div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="panel panel-default">
+                
+                <div class="panel-body">
+        <form action="/knowledge/list/apply" method="POST" enctype="multipart/form-data">
+
+        <div class="form-group">
+ <label for="name"><span style="color:rgb(255, 255, 255)"><span class="glyphicon">&#xe124;</span>  Idea Submitted By:</span></label> 
+                 {{list.email}} <br>
+        <hr></div>
+     <div class="form-group">
+<label for="description"><span style="color:rgb(255, 255, 255)"> <span class="glyphicon">&#x270f;</span> Description:</span></label>
+         <br>
+        <p>{{list.description}}</p>
+        <br>
+        <hr></div>
+       <div class="form-group">
+<label><span class="glyphicon">&#xe109;</span>  Days to work :</label> 
+         {{list.timePeriod}} <br>
+        <hr></div>
+        {{#if userCheck}}
+                <button><a href="/admin/list/edit/{{list._id}}">Edit</a></button>
+                <button><a href="/admin/list/deactive/{{list._id}}">Inactive</a></button>
+        {{/if}}
+</div>
