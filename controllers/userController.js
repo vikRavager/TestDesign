@@ -15,13 +15,23 @@ router.get('/admin-registration',function(req,res){
 });
 
 router.get('/admin-dashboard',function(req,res){
-        res.render('dashboard');
+        res.render('dashboardAdm');
 });
+
 
 
 router.get('/list_of_problem',function(req,res){
-        res.render('listOfProblem');
+        res.render('listOfProblemAdm');
 });
+
+router.get('/dashboardKnowledgeC',function(req,res){
+        res.render('dashboardKnowledgeC');
+});
+
+router.get('/listOfProblemKnC',function(req,res){
+        res.render('listOfProblemKnC');
+});
+
 
 
 
