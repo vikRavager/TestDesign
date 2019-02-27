@@ -1,0 +1,81 @@
+<div>
+        {{#if errors}}
+                {{#each errors}}
+                        <div>{{msg}}</div>
+                {{/each}}
+        {{/if}}
+        <style>
+     .col-md-4 {margin-top:80px;
+        box-shadow: 10px 10px 60px 25px black;
+        background: rgba(0, 0, 0, 0.4);
+	margin-left:150px;
+        margin-bottom:50px;
+        margin-top:10px;
+        margin-left:350px;
+     }
+        .col-md-4 col-sm-4 col-xs-12 input{
+	width:100%;
+	margin-bottom:20px;
+}
+
+     .form-control{
+	background:white;
+	border-radius: 0px;
+	border:0px;
+	border-bottom:1px;
+} 
+ .form-group{
+         text-align: center;
+ }
+ .label{
+	font-weight:normal;
+	margin-top:15px;
+	color:white;
+	font-size:21px;
+}
+.panel{
+        border:0px;
+        background:rgba(0,0,0,0.5);
+        color:#ffff;
+        text-align:center;
+        padding-top:50px;
+}
+
+
+        </style>
+        
+        
+        <div class="container">
+                <div class="row">
+                        
+<div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="panel panel-default">
+                
+                <div class="panel-body">
+        <form action="/admin/create" method="POST" enctype="multipart/form-data" autocomplete="off" class="form-horizontal">
+         <input type="hidden" name="_id" value="{{list._id}}">
+        <div class="form-group">
+<label for="title"><span style="color:rgb(255, 255, 255)"><span class="glyphicon">&#xe065;</span> Title:</span></label>
+                 <input type="text" name="title" id="" placeholder="Title" value="{{list.title}}" class="form-control"><br>
+        </div>
+        <div class="form-group">
+<label for="description"><span style="color:rgb(255, 255, 255)"> <span class="glyphicon">&#x270f;</span> Description:</span></label>                         
+                <textarea name="description" id="descrip" cols="30" rows="10" >{{list.description}}</textarea><br>
+        </div>
+        <div class="form-group">
+<label><span class="glyphicon">&#xe203;</span>  Upload pdf file:</label>
+                <input type="file" name="descriptionPDF" id="" class="form-control"><br>
+        </div>
+        <div class="form-group">
+<label><span class="glyphicon">&#xe109;</span>  Time Available (in Days):</label>                 
+                <input type="number" name="timePeriod" value="{{list.timePeriod}}" class="form-control" ><br>
+        </div>  
+        <div class="form-group">        
+      <div class="col-md-offset-0 col-md-15">
+        <button type="button" class="btn btn-info">Submit</button>
+
+      </div>      
+              </form> 
+
+     
+</div>

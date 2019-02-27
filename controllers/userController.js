@@ -13,5 +13,13 @@ router.get('/test1',function(req,res){
 router.get('/admin-registration',function(req,res){
         res.render('adminRegistration');
 });
-
+router.get('/createOrEdit',function(req,res){
+        res.render('createOrEdit');
+});
+router.get('/knowledge-registration',function(req,res){
+        res.render('knowledgeRegistration');
+});
+router.get('/apply',function(req,res){
+        res.render('apply');
+});       
 module.exports = router;
