@@ -26,4 +26,7 @@ router.get('/apply',function(req,res){
 router.get('/list-applied',function(req,res){
         res.render('listApplied');
 }); 
+router.get('',(req,res)=>{
+        res.render('viewProblemKnowledgeContributor');
+});
 module.exports = router;
