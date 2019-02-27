@@ -15,21 +15,21 @@ router.get('/admin-registration',function(req,res){
 });
 
 router.get('/admin-dashboard',function(req,res){
-        res.render('dashboardAdm');
+        res.render('adminDashboard');
 });
 
 
 
-router.get('/list_of_problem',function(req,res){
-        res.render('listOfProblemAdm');
+router.get('/admin-listofproblem',function(req,res){
+        res.render('adminListOfProblem');
 });
 
-router.get('/dashboardKnowledgeC',function(req,res){
-        res.render('dashboardKnowledgeC');
-});
+router.get('/knowledge-contributor-dashboard',function(req,res){
+        res.render('knowledgeContributorDashboard');
 
-router.get('/listOfProblemKnC',function(req,res){
-        res.render('listOfProblemKnC');
+});
+router.get('/knowledge-contributor-listofproblem',function(req,res){
+        res.render('knowledgeContributorListOfProblem');
 });
 
 
