@@ -1,0 +1,27 @@
+<div>
+        <h2  style=" text-align: center;
+        margin-top: 5px;
+        color: black;
+        background: #ffff;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ">List of Problem Statement Applied</h2><br><br><br>
+        <table class="table table-dark" style="background:rgba(0,0,0,0.2); width:70%; 
+    margin-left:15%; 
+    margin-right:15%;">
+        <thead>
+                <tr style="font-size: 12pt">
+                <th><b>Email</b></th>
+                <th><b>Title</b></th>
+                <th><b>View Details</b></th>
+                </tr>
+        </thead>
+        <tbody>
+                {{#each list}}
+                <tr>
+                <td>{{this.adminEmail}}</td>
+                <td>{{this.title}}</td>
+                <td><a href="/knowledge/applied/{{this._id}}">View Details</a></td>
+                </tr>
+                {{/each}}
+        </tbody>
+        </table>
+</div>
