@@ -1,0 +1,63 @@
+<div >
+      <h1 style=" text-align: center;
+        margin-top: 5px;
+        color: black;
+        background: #ffff;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ">Admin Dashboard</h1>
+</div><br><br><br><br>
+
+<div style="text-align:center;padding:20px;
+            border-radius:5px;
+            box-shadow: 0px 0px 10px 0px #000;
+            background:rgba(0,0,0,0.2)">
+      
+            <span style="font-weight:bolder;
+             font-size:20pt ;top:10vh;
+            background:whitesmoke;
+            padding:20px;
+            border-radius:5px;
+            box-shadow: 0px 0px 10px 0px #000;
+            font-weight: 700;font-size:21pt;"><a href="/admin/create">create Problem statement</a></span><br><br><br><br><br>
+
+            <span style="font-weight:bolder; 
+            font-size:20pt top:10vh;
+            background:whitesmoke;
+            padding:20px;
+            border-radius:5px;
+            box-shadow: 0px 0px 10px 0px #000;
+            font-weight: 700;font-size:21pt; "><a href="/admin/list">List of Problems</a></span>
+      
+</div>
+<div>
+      Hello {{userType}} : {{name}} <br>
+      resume : <a href="{{resume}}">open resume</a>
+      rr : {{resume}}
+
+</div>
+
+<div>
+
+      <h5>list of unverified worker</h5><br>
+      {{!-- <table style="width:100%">
+      <thead>
+            <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>CV</th>
+                  <th>Send Mail</th>
+                  <th>Verify</th>
+            </tr>
+      </thead>
+      <tbody>
+            {{#each list}}
+            <tr>
+                  <td>{{this.name}}</td>
+                  <td>{{this.email}}</td>
+                  <td><a href="{{this.cv}}">open cv</a></td>
+                  <td><a href="#">send mail</a></td> 
+                  <td><a href="#">Verify</a></td>
+            </tr>
+            {{/each}}
+      </tbody>
+      </table> --}}
+</div>

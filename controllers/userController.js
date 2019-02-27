@@ -14,4 +14,15 @@ router.get('/admin-registration',function(req,res){
         res.render('adminRegistration');
 });
 
+router.get('/admin-dashboard',function(req,res){
+        res.render('dashboard');
+});
+
+
+router.get('/list_of_problem',function(req,res){
+        res.render('listOfProblem');
+});
+
+
+
 module.exports = router;
