@@ -32,6 +32,10 @@ router.get('/knowledge-contributor-listofproblem',function(req,res){
         res.render('knowledgeContributorListOfProblem');
 });
 
+router.get('/view-problem-statement',function(req,res){
+        res.render('viewProblemKnowledgeContributor');
+});
+
 
 
 
