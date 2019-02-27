@@ -26,7 +26,12 @@ router.get('/knowledge-apply',function(req,res){
 router.get('/knowledgeList-applied',function(req,res){
         res.render('knowledgeContributerListOfProblemApplied');
 }); 
+<<<<<<< HEAD
 router.get('/Admin-viewstatement',function(req,res){
         res.render('AdminviewStatement');
+=======
+router.get('/view-Each-Applied',(req,res)=>{
+        res.render('viewProblemKnowledgeContributor');
+>>>>>>> 50e34d4ad40e1c2f534284fb2c6ac3058a25b28c
 });
 module.exports = router;
