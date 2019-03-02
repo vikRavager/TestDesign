@@ -35,4 +35,7 @@ router.get('/finance-registration',function(req,res){
 router.get('/developer-registration',function(req,res){
         res.render('developerRegistration');
 });
+router.get('/forgotPassword',(req,res)=>{
+        res.render('forgotPassword');
+});
 module.exports = router;
